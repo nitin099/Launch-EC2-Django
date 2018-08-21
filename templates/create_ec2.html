@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<br><br><br><br>
+
+<h1>Launch Ec2</h1>
+<div class="row">
+<div class="col-sm-6">
+<form method="POST" action=""> {% csrf_token %}
+		{{form|crispy}} 
+				<input class="btn btn-primary" type="Submit" value="Launch">
+				<br><br><br><br>
+			</form>
+		</div>
+	</div>
+{% endblock content %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br>
+<br><br>
+<br>
+{% for i in query %}
+
+<div class="container">
+	<div class="col-sm-6 col-md-4">
+		<ul class="list-group">
+			<li class="list-group-item"><h5 style="display: inline"> VpcId - </h5> {{ i.vpc_id}} </li>
+			<li class="list-group-item"><h5 style="display: inline"> Value - </h5> {{ i.value }} </li>
+		    <li class="list-group-item"><h5 style="display: inline"> CidrBlockState - </h5> {{i.cidr_state }} </li>
+			<li class="list-group-item"><h5 style="display: inline"> CidrBlock - </h5> {{i.cidr_block }} </li>
+		</ul>
+		<hr>
+	</div>
+</div>
+		
+{% endfor %}
+{% endblock content %}

@@ -1,0 +1,41 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Multi Cloud</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="jumbotron.css" rel="stylesheet">
+
+	<!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+		<style> 
+		.jumbotron {
+			background-color: #bbbdb3s;
+		}
+		.bg-dark{
+			background-color: #040404!important;
+		}
+		.modal-dialog {
+		    width: 650px;
+		        }
+		.modal-header {
+		 	padding:4px 4px;
+		}
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			 {% block content %}
+			 {% endblock content %}
+		</div>
+
+		 {% block home %}
+		 {% endblock home %}
+
+		 {% include "navbar.html" %}
+
+		 {% include "scripts.html" %}
+	</body>
+</html>

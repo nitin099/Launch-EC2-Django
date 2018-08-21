@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br><br><br><br>
+<h1> You have successfully launched an Ec2 instance </h1>
+<h4> Instance Id  - {{instance_id}} </h4>
+<button type="button" class="btn btn-success" href="/ec2_instance/">Launch Again</button>
+{% endblock content %}

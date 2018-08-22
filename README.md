@@ -1,2 +1,2 @@
-# Launch-EC2-Django
+# Launch-EC2-Instance-Django
 ![Screenshot](Home.png)
